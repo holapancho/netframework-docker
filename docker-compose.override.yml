@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  netframeworkdocker:
+    ports:
+      - "80"
+  anothernetframeworkdocker:
+    ports:
+      - "80"
+networks:
+  default:
+    external:
+      name: nat
+
