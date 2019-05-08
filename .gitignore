@@ -27,6 +27,15 @@
 *.lib
 
 # Executables
-*.exe
+*.exe #tal ves deba eliminarse
 *.out
 *.app
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+ipch/
