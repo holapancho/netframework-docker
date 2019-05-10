@@ -7,9 +7,10 @@ services:
       context: .\NetFrameworkDocker
       dockerfile: Dockerfile
 
+
   anothernetframeworkdocker:
     image: ${DOCKER_REGISTRY-}anothernetframeworkdocker
     build:
       context: .\AnotherNetFrameworkDocker
       dockerfile: Dockerfile
-
+      

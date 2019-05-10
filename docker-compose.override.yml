@@ -4,11 +4,21 @@ services:
   netframeworkdocker:
     ports:
       - "80"
+    networks:
+      testing_net:
+        ipv4_address: 172.28.1.1
   anothernetframeworkdocker:
     ports:
       - "80"
+    networks:
+      testing_net:
+        ipv4_address: 172.28.1.2
+
 networks:
-  default:
-    external:
-      name: nat
+  testing_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+
 
