@@ -39,3 +39,7 @@
 *.ilk
 *.aps
 ipch/
+*.cache
+*.lock
+*.ide-shm
+*.yml
